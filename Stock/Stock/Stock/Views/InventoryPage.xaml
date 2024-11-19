@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stock.Views.InventoryPage">
+
+    <AbsoluteLayout>
+        <Label x:Name="EmptyInventoryLabel"
+               Text="      Aún no se ha agregado algun producto"
+               IsVisible="False"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Medium"
+               FontAttributes="Italic"
+               TextColor="Gray" />
+        <!-- ListView para mostrar el inventario agrupado -->
+        <ListView x:Name="InventoryListView" ItemSelected="OnItemSelected" HasUnevenRows="True"
+                  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="15" Margin="5" BackgroundColor="White" CornerRadius="8" BorderColor="LightGray">
+                            <AbsoluteLayout>
+
+                                <!-- Contenido del Frame -->
+                                <StackLayout VerticalOptions="StartAndExpand" Spacing="10"
+                                             AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                                             AbsoluteLayout.LayoutFlags="All">
+                                    <!-- Serial Number y Contador -->
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                        <Label Text="Serial Number:" FontSize="Small" TextColor="Gray"/>
+                                        <Label Text="{Binding SerialNumber}" FontSize="Medium" TextColor="Black"/>
+                                        <Label Text="Cantidad:" FontSize="Small" TextColor="Gray" Margin="10,0,0,0"/>
+                                        <Label Text="{Binding Count}" FontSize="Medium" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <!-- Información del primer elemento del grupo -->
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Marca:" FontSize="Small" TextColor="Gray"/>
+                                        <Label Text="{Binding FirstItem.Marca}" FontSize="Medium" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Modelo:" FontSize="Small" TextColor="Gray"/>
+                                        <Label Text="{Binding FirstItem.Modelo}" FontSize="Medium" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Tipo:" FontSize="Small" TextColor="Gray"/>
+                                        <Label Text="{Binding FirstItem.Tipo}" FontSize="Medium" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Ultima Fecha de Ingreso:" FontSize="Small" TextColor="Gray"/>
+                                        <Label Text="{Binding FirstItem.FechaIngreso}" FontSize="Medium" TextColor="Black"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <!-- Botón de eliminación en la esquina superior derecha del Frame -->
+                                <Button Text="Χ"
+                                        BackgroundColor="Red"
+                                        TextColor="White"
+                                        WidthRequest="40"
+                                        HeightRequest="40"
+                                        FontSize="Small"
+                                        CornerRadius="20"
+                                        Clicked="OnDeleteItemClicked"
+                                        CommandParameter="{Binding SerialNumber}"
+                                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                                        AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
+                                        Opacity="0.7" />
+
+                            </AbsoluteLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Botón flotante para agregar un producto en la esquina inferior derecha -->
+        <Button Text="+" 
+                BackgroundColor="RoyalBlue"
+                TextColor="White" 
+                FontSize="24" 
+                CornerRadius="30"
+                WidthRequest="60"
+                HeightRequest="60"
+                Clicked="OnAddProductClicked"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                Margin="15" />
+    </AbsoluteLayout>
+</ContentPage>

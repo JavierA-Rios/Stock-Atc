@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stock.Views.LoginPage"
+             BackgroundColor="White">
+
+    <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="20">
+
+        <!-- Título de la página -->
+        <Label Text="Stock ATC" 
+               FontSize="Header"
+               FontFamily="San Serif"
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+
+        <!-- Campos de entrada de datos -->
+        <Entry x:Name="NumeroEmpleadoEntry" 
+               Placeholder="Ingrese Su Numero De Empleado" 
+               Keyboard="Numeric" 
+               HorizontalOptions="FillAndExpand" />
+
+        <Entry x:Name="PasswordEntry" 
+               Placeholder="Contraseña" 
+               IsPassword="True" 
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Botón de inicio de sesión -->
+        <Button Text="Iniciar Sesión" 
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                Clicked="OnLoginClicked" />
+
+        <!-- Botón de registro -->
+        <Button Text="¿No tienes cuenta? Regístrate" 
+                VerticalOptions="End" 
+                HorizontalOptions="FillAndExpand" 
+                Clicked="OnGoToRegisterClicked" />
+    </StackLayout>
+</ContentPage>

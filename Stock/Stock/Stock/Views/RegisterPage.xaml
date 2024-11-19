@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stock.Views.RegisterPage"
+             Title="Ingres sus Datos">
+
+    <StackLayout Padding="30">
+        <Label Text="Ingrese Su Numero de Empleado" />
+        <Entry x:Name="NumeroEmpleadoEntry" 
+               Placeholder="Numero de Empleado" 
+               Keyboard="Numeric" 
+               HorizontalOptions="FillAndExpand" />
+
+        <Label Text="Ingrese el Nombre de la Empresa" />
+        <Entry x:Name="EmpresaEntry"
+               Placeholder="Empresa"
+               HorizontalOptions="FillAndExpand" />
+
+        <Label Text="Ingrese Su Primer Nombre" />
+        <Entry x:Name="PrimerNombreEntry"
+               Placeholder="Primer Nombre"
+               HorizontalOptions="FillAndExpand" />
+
+        <Label Text="Ingrese Su Primer Apellido" />
+        <Entry x:Name="PrimerApellidoEntry"
+               Placeholder="Primer Apellido"
+               HorizontalOptions="FillAndExpand" />
+
+        <Label Text="Ingrese Una Contraseña" />
+        <Entry x:Name="PasswordEntry" 
+               Placeholder="Contraseña" 
+               IsPassword="True" 
+               HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Registrar" 
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                Clicked="OnRegisterClicked" />
+
+        <Button Text="Ya tiene Cuenta? Inicie Sesion" 
+               VerticalOptions="Center" 
+               HorizontalOptions="FillAndExpand" 
+               Clicked="OnGoToLoginClicked" />
+    </StackLayout>
+</ContentPage>

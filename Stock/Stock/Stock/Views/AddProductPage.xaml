@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stock.Views.AddProductPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <!--<Entry Placeholder="Serial Number" x:Name="SerialNumberEntry" />-->
+
+                <Button Text="Escanear Codigo de Barras/QR" Clicked="OnScanAndSearchProductClicked" />
+
+                <!-- Información del producto encontrada -->
+                <StackLayout x:Name="ProductFields" IsVisible="False">
+                    <Label Text="Serial Number" />
+                    <Entry x:Name="SerialNumberResult" IsReadOnly="True" />
+
+                    <Label Text="Tipo" />
+                    <Entry x:Name="TipoResult" IsReadOnly="True" />
+
+                    <Label Text="Marca" />
+                    <Entry x:Name="MarcaResult" IsReadOnly="True" />
+
+                    <Label Text="Modelo" />
+                    <Entry x:Name="ModeloResult" IsReadOnly="True" />
+
+                    <Label Text="Precio" />
+                    <Entry x:Name="PrecioResult" IsReadOnly="True" />
+
+                    <Label Text="Factura" />
+                    <Entry x:Name="FacturaResult" IsReadOnly="True" />
+
+                    <Button Text="Guardar en Stock" x:Name="SaveProductButton" Clicked="OnSaveProductClicked" IsVisible="False"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

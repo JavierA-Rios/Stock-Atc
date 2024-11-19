@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\javier.alvarez.PHES\\Downloads\\Stock\\Stock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A4A611-DCC2-451F-B2C1-6B171CCD0CFF}|Stock\\Stock\\Stock.csproj|c:\\users\\javier.alvarez.phes\\downloads\\stock\\stock\\stock\\stock\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A4A611-DCC2-451F-B2C1-6B171CCD0CFF}|Stock\\Stock\\Stock.csproj|solutionrelative:stock\\stock\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A4A611-DCC2-451F-B2C1-6B171CCD0CFF}|Stock\\Stock\\Stock.csproj|c:\\users\\javier.alvarez.phes\\downloads\\stock\\stock\\stock\\stock\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{D9A4A611-DCC2-451F-B2C1-6B171CCD0CFF}|Stock\\Stock\\Stock.csproj|solutionrelative:stock\\stock\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\javier.alvarez.PHES\\Downloads\\Stock\\Stock\\Stock\\Stock\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Stock\\Stock\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\javier.alvarez.PHES\\Downloads\\Stock\\Stock\\Stock\\Stock\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Stock\\Stock\\Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:39:16.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\javier.alvarez.PHES\\Downloads\\Stock\\Stock\\Stock\\Stock\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Stock\\Stock\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\javier.alvarez.PHES\\Downloads\\Stock\\Stock\\Stock\\Stock\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "Stock\\Stock\\Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T04:39:15.264Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
